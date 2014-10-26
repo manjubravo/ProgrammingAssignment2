@@ -22,7 +22,6 @@ makeCacheMatrix <- function(x = matrix()) {
         ## get function to retrieve the matrix
         get <- function() x
         
-        
         ## setinv function to update the matrix inverse
         setinv <- function(inv) i <<- inv
         
