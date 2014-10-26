@@ -9,7 +9,6 @@
 ## If saved -  Return the cached inverse of 'x'
 ## If not saved - Get data from 'x', compute inverse and save it to the cache in 'x'
 
-
 #Creates a 'special matrix', which is matrix and inverse objects in the environment and a list of functions to access/update them
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
@@ -22,6 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
         
         ## get function to retrieve the matrix
         get <- function() x
+        
         
         ## setinv function to update the matrix inverse
         setinv <- function(inv) i <<- inv
